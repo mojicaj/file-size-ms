@@ -13,6 +13,12 @@ body {
 	margin-top: 40px;
 }
 
+.main {
+  width: 75%;
+  margin: auto;
+  text-align: left;
+}
+
 .footer {
 	margin-top: 60px;
 }
