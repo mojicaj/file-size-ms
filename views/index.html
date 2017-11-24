@@ -2,7 +2,7 @@
 <html>
 
    <head>
-      <title>FCC Backend Challenges | </title>
+      <title>FCC Backend Challenges | File Size Microservice</title>
       <link rel="shortcut icon" href="https://cdn.hyperdev.com/us-east-1%3A52a203ff-088b-420f-81be-45bf559d01b1%2Ffavicon.ico" type="image/x-icon"/>
       <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
       <link href="/public/style.css" rel="stylesheet" type="text/css">
@@ -11,7 +11,7 @@
    <body>
       <div class="container">
          <h1>API Backend Challenge</h1>
-         <h2>Timestamp microservice</h2>
+         <h2>File Size Microservice</h2>
         
         <div class="main">
           
@@ -20,37 +20,17 @@
                User stories:
             </h4>
             <ul>
-              1) I can pass a string as a parameter, and it will check to see whether that string contains either a unix timestamp or a natural language date (example: January 1, 2016)
+              1) I can submit a FormData object that includes a file upload.
             </ul>
             <ul>
-              2) If it does, it returns both the Unix timestamp and the natural language form of that date.  
-            </ul>
-            <ul>
-              3) If it does not contain a date or Unix timestamp, it returns null for those properties.
+              2) When I submit something, I will receive the file size in bytes within the JSON response  
             </ul>
           </blockquote>
-          
-          
-          <h3>
-            Example usage:
-          </h3>
-        
-          <a href="https://jm-timestamp.glitch.me/November%2010,%202017" target="_blank">
-          <code>https://jm-timestamp.glitch.me/November%2010,%202017</code>
-          </a>
           <br>
-          <a href="https://jm-timestamp.glitch.me/1510272000" target="_blank">
-          <code>https://jm-timestamp.glitch.me/1510272000</code>
-          </a>
-          <br>
-        
           <h3>
-            Example output:
+            Submit a file to view its file size
           </h3>
-        
-          <code>
-            { "unix": 1510272000, "natural": "November 10, 2017" }
-          </code>
+          
         </div>
         
       </div>
