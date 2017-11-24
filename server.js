@@ -5,9 +5,9 @@
 
 'use strict';
 
-var fs = require('fs');
-var express = require('express');
-var app = express();
+const fs = require('fs');
+const express = require('express');
+const app = express();
 
 if (!process.env.DISABLE_XORIGIN) {
   app.use(function(req, res, next) {
