@@ -39,8 +39,8 @@ app.route('/')
     })
 
 
-app.post('/filesize', (file)=> {
-  console.log(file)
+app.post('/filesize', (req, res, next)=> {
+  console.log(next);
 })
   
 
