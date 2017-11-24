@@ -39,11 +39,10 @@ app.route('/')
     })
 
 
-app.route('/filesize')
-  .get(function(req, res) {
-    console.log(req);
+app.post('/filesize', (file)=> {
+  console.log(file)
+})
   
-  })
 
 // Respond not found to all the wrong routes
 app.use(function(req, res, next){
