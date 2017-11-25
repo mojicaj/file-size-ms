@@ -8,6 +8,8 @@
 const fs = require('fs');
 const express = require('express');
 const app = express();
+const multer  = require('multer');
+const upload = multer({ dest: 'uploads/' });
 
 if (!process.env.DISABLE_XORIGIN) {
   app.use(function(req, res, next) {
@@ -39,8 +41,8 @@ app.route('/')
     })
 
 
-app.post('/filesize', (req, res, next)=> {
-  console.log(next);
+app.post('/filesize', upload.single("fileToUpload"), (req, res)=> {
+  res.type("json").send({size: req.file.size});
 })
   
 
