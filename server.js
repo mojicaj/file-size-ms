@@ -42,12 +42,12 @@ app.route('/')
 
 
 app.post('/filesize', upload.single("fileToUpload"), (req, res)=> {
-   //console.log(req.file.size)
-  /*if (req.file.size) {
+   
+  if (req.file) {
     res.type("json").send({size: req.file.size});
   } else {
     res.type('txt').send('No file selected');
-  }*/
+  }
   
 })
   
